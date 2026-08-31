@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1E3A2B">
+<title>Jane C. Rafael</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    color-scheme: only light;
+    --forest: #1E3A2B;
+    --forest-deep: #16291F;
+    --forest-line: #2E5140;
+    --gold: #C69B4E;
+    --soft-gold: #DCBE83;
+    --cream: #F6F1E3;
+    --sage: #9BB097;
+    --display: "Hanken Grotesk", "Helvetica Neue", Arial, sans-serif;
+    --body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--forest-deep); }
+  body {
+    margin: 0;
+    background: var(--forest);
+    color: var(--cream);
+    font-family: var(--body);
+    -webkit-font-smoothing: antialiased;
+    padding: 34px 20px calc(40px + env(safe-area-inset-bottom));
+    display: flex;
+    justify-content: center;
+  }
+  .card { width: 100%; max-width: 400px; }
+
+  .name {
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.1;
+    letter-spacing: -0.015em;
+    margin: 0 0 12px;
+  }
+  .roles {
+    margin: 0 0 30px;
+    padding: 0 0 0 13px;
+    list-style: none;
+    border-left: 1px solid var(--forest-line);
+    font-size: 13.5px;
+    line-height: 1.75;
+    color: var(--sage);
+  }
+  .roles li:first-child { color: var(--soft-gold); }
+
+  .arch {
+    background: var(--cream);
+    border-radius: 14px;
+    padding: 30px 20px;
+    margin-bottom: 26px;
+    text-align: center;
+  }
+  .plate-name {
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: 22px;
+    color: var(--forest);
+    letter-spacing: -0.01em;
+    margin: 0;
+  }
+  .plate-sub {
+    font-family: var(--display);
+    font-weight: 500;
+    font-size: 13px;
+    color: var(--gold);
+    letter-spacing: 0.06em;
+    margin: 6px 0 0;
+    text-transform: uppercase;
+  }
+
+  .links { display: grid; gap: 8px; }
+  .row {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: var(--cream);
+    background: transparent;
+    border: 1px solid var(--forest-line);
+    border-radius: 12px;
+    padding: 13px 40px 13px 16px;
+    transition: background .14s ease, border-color .14s ease;
+  }
+  .row-t { font-family: var(--display); font-weight: 500; font-size: 15px; display: block; }
+  .row-s { font-size: 12.5px; color: var(--sage); display: block; margin-top: 2px; }
+  .row.lead { border-color: var(--gold); }
+  .row.lead .row-t { color: var(--soft-gold); }
+  .row:active { background: var(--forest-deep); }
+  .row:focus-visible { outline: 2px solid var(--soft-gold); outline-offset: 2px; }
+  .row-arrow {
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    width: 8px;
+    height: 8px;
+    transform: translateY(-50%) rotate(45deg);
+    border-top: 1.5px solid var(--sage);
+    border-right: 1.5px solid var(--sage);
+  }
+  .row.lead .row-arrow { border-color: var(--soft-gold); }
+
+  .reach {
+    margin-top: 26px;
+    padding-top: 18px;
+    border-top: 1px solid var(--forest-line);
+    display: grid;
+    gap: 9px;
+    font-size: 14px;
+  }
+  .reach a { color: var(--cream); text-decoration: none; }
+  .reach a:focus-visible { outline: 2px solid var(--soft-gold); outline-offset: 3px; }
+  .reach span { color: var(--sage); font-size: 12px; display: block; margin-bottom: 1px; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .row { transition: none; }
+  }
+</style>
+</head>
+<body>
+<main class="card">
+  <h1 class="name">Jane C. Rafael</h1>
+  <ul class="roles">
+    <li>Ops Manager</li>
+    <li>VA Agency Owner</li>
+    <li>SJL Ventures Founder</li>
+  </ul>
+
+  <div class="arch">
+    <p class="plate-name">Jane C. Rafael</p>
+    <p class="plate-sub">Digital Card</p>
+  </div>
+
+  <div class="links">
+<a class="row lead" href="data:text/vcard;charset=utf-8;base64,QkVHSU46VkNBUkQNClZFUlNJT046My4wDQpOOlJhZmFlbDtKYW5lO0MuOzsNCkZOOkphbmUgQy4gUmFmYWVsDQpPUkc6U0pMIFZlbnR1cmVzDQpUSVRMRTpPcHMgTWFuYWdlciwgVkEgQWdlbmN5IE93bmVyLCBTSkwgVmVudHVyZXMgRm91bmRlcg0KVEVMO1RZUEU9Q0VMTDorNjM5Mjc4ODkxNjg1DQpFTUFJTDtUWVBFPUlOVEVSTkVUOmphbmVAeW91cnNtYXJ0dmlydHVhbG9mZmljZS5jb20NClVSTDpodHRwczovL3d3dy5mYWNlYm9vay5jb20vdGhlb3JkaW5hcnlvd25lcg0KRU5EOlZDQVJEDQo=" download="Jane-Rafael.vcf"><span class="row-t">Save my contact</span><span class="row-s">Adds Jane to your phone</span><span class="row-arrow" aria-hidden="true"></span></a>
+<a class="row" href="https://airbnb.com/h/marshwindsanctuary" target="_blank" rel="noopener"><span class="row-t">Marshwind Sanctuary</span><span class="row-s">Book the farm stay on Airbnb</span><span class="row-arrow" aria-hidden="true"></span></a>
+<a class="row" href="https://www.facebook.com/marshwindsanctuary" target="_blank" rel="noopener"><span class="row-t">Marshwind Sanctuary</span><span class="row-s">Facebook page</span><span class="row-arrow" aria-hidden="true"></span></a>
+<a class="row" href="https://www.facebook.com/theordinaryowner" target="_blank" rel="noopener"><span class="row-t">The Ordinary Owner</span><span class="row-s">Facebook page</span><span class="row-arrow" aria-hidden="true"></span></a>
+<a class="row" href="https://www.facebook.com/i.am.marshwind" target="_blank" rel="noopener"><span class="row-t">Jane Rafael</span><span class="row-s">Personal Facebook</span><span class="row-arrow" aria-hidden="true"></span></a>
+  </div>
+
+  <div class="reach">
+    <a href="mailto:jane@yoursmartvirtualoffice.com"><span>Email</span>jane@yoursmartvirtualoffice.com</a>
+    <a href="tel:+639278891685"><span>Mobile</span>+63 927 889 1685</a>
+  </div>
+</main>
+</body>
+</html>
