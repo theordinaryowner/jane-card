@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1E3A2B">
+<title>Jane C. Rafael</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    color-scheme: only light;
+    --forest: #1E3A2B;
+    --forest-deep: #16291F;
+    --forest-line: #2E5140;
+    --gold: #C69B4E;
+    --soft-gold: #DCBE83;
+    --cream: #F6F1E3;
+    --sage: #9BB097;
+    --display: "Hanken Grotesk", "Helvetica Neue", Arial, sans-serif;
+    --body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--forest-deep); }
+  body {
+    margin: 0;
+    background: var(--forest);
+    color: var(--cream);
+    font-family: var(--body);
+    -webkit-font-smoothing: antialiased;
+    padding: 28px 20px calc(36px + env(safe-area-inset-bottom));
+    display: flex;
+    justify-content: center;
+  }
+  .card { width: 100%; max-width: 400px; }
+
+  .name {
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1.1;
+    letter-spacing: -0.015em;
+    margin: 0 0 12px;
+  }
+  .roles {
+    margin: 0 0 26px;
+    padding: 0 0 0 13px;
+    list-style: none;
+    border-left: 1px solid var(--forest-line);
+    font-size: 13.5px;
+    line-height: 1.75;
+    color: var(--sage);
+  }
+  .roles li:first-child { color: var(--soft-gold); }
+
+  /* the arch: signature mark of the brand, used as the plate the code sits in */
+  .arch {
+    background: var(--cream);
+    border-radius: 190px 190px 14px 14px;
+    padding: 46px 26px 26px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 0 1px rgba(198,155,78,0.35);
+  }
+  .stack { position: relative; width: 100%; aspect-ratio: 1; }
+  .panel {
+    position: absolute; inset: 0;
+    opacity: 0; visibility: hidden;
+    transition: opacity .18s ease;
+  }
+  .panel.on { opacity: 1; visibility: visible; }
+  .qr { width: 100%; height: 100%; display: block; }
+
+  .now {
+    text-align: center;
+    margin: 16px 0 24px;
+  }
+  .now-t {
+    font-family: var(--display);
+    font-weight: 500;
+    font-size: 16px;
+    display: block;
+  }
+  .now-s {
+    font-size: 13px;
+    color: var(--sage);
+    display: block;
+    margin-top: 3px;
+  }
+
+  .rows { display: grid; gap: 7px; }
+  .row {
+    appearance: none;
+    text-align: left;
+    font: inherit;
+    color: var(--cream);
+    background: transparent;
+    border: 1px solid var(--forest-line);
+    border-radius: 11px;
+    padding: 11px 14px;
+    cursor: pointer;
+    display: grid;
+    gap: 1px;
+    transition: background .14s ease, border-color .14s ease;
+  }
+  .row-t { font-family: var(--display); font-weight: 500; font-size: 14.5px; }
+  .row-s { font-size: 12.5px; color: var(--sage); }
+  .row.lead { border-color: var(--gold); }
+  .row.lead .row-t { color: var(--soft-gold); }
+  .row.on { background: var(--forest-deep); border-color: var(--gold); }
+  .row.on .row-s { color: var(--soft-gold); }
+  .row:focus-visible { outline: 2px solid var(--soft-gold); outline-offset: 2px; }
+
+  .reach {
+    margin-top: 24px;
+    padding-top: 18px;
+    border-top: 1px solid var(--forest-line);
+    display: grid;
+    gap: 9px;
+    font-size: 14px;
+  }
+  .reach a { color: var(--cream); text-decoration: none; }
+  .reach a:focus-visible { outline: 2px solid var(--soft-gold); outline-offset: 3px; }
+  .reach span { color: var(--sage); font-size: 12px; display: block; margin-bottom: 1px; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .panel, .row { transition: none; }
+  }
+</style>
+</head>
+<body>
+<main class="card">
+  <h1 class="name">Jane C. Rafael</h1>
+  <ul class="roles">
+    <li>Ops Manager</li>
+    <li>VA Agency Owner</li>
+    <li>SJL Ventures Founder</li>
+  </ul>
+
+  <div class="arch">
+    <div class="stack">
+<div class="panel on" id="p-vcard" data-key="vcard"><svg class="qr" viewBox="0 0 73 73" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges" role="img" aria-label="QR code"><path d="M4 4h7v1h-7zM15 4h1v1h-1zM17 4h1v1h-1zM19 4h1v1h-1zM21 4h3v1h-3zM27 4h1v1h-1zM30 4h1v1h-1zM33 4h2v1h-2zM36 4h1v1h-1zM41 4h1v1h-1zM43 4h4v1h-4zM48 4h1v1h-1zM53 4h1v1h-1zM55 4h3v1h-3zM59 4h1v1h-1zM62 4h7v1h-7zM4 5h1v1h-1zM10 5h1v1h-1zM16 5h2v1h-2zM19 5h3v1h-3zM23 5h1v1h-1zM28 5h1v1h-1zM31 5h2v1h-2zM37 5h1v1h-1zM40 5h2v1h-2zM43 5h2v1h-2zM46 5h1v1h-1zM48 5h4v1h-4zM53 5h3v1h-3zM60 5h1v1h-1zM62 5h1v1h-1zM68 5h1v1h-1zM4 6h1v1h-1zM6 6h3v1h-3zM10 6h1v1h-1zM12 6h1v1h-1zM14 6h2v1h-2zM17 6h1v1h-1zM19 6h4v1h-4zM26 6h2v1h-2zM29 6h1v1h-1zM32 6h1v1h-1zM35 6h1v1h-1zM37 6h2v1h-2zM44 6h1v1h-1zM48 6h1v1h-1zM51 6h1v1h-1zM55 6h1v1h-1zM58 6h1v1h-1zM60 6h1v1h-1zM62 6h1v1h-1zM64 6h3v1h-3zM68 6h1v1h-1zM4 7h1v1h-1zM6 7h3v1h-3zM10 7h1v1h-1zM12 7h2v1h-2zM15 7h1v1h-1zM18 7h1v1h-1zM21 7h1v1h-1zM23 7h1v1h-1zM28 7h1v1h-1zM31 7h2v1h-2zM37 7h6v1h-6zM45 7h2v1h-2zM49 7h4v1h-4zM54 7h1v1h-1zM57 7h3v1h-3zM62 7h1v1h-1zM64 7h3v1h-3zM68 7h1v1h-1zM4 8h1v1h-1zM6 8h3v1h-3zM10 8h1v1h-1zM12 8h4v1h-4zM17 8h1v1h-1zM19 8h1v1h-1zM21 8h3v1h-3zM25 8h1v1h-1zM27 8h1v1h-1zM29 8h1v1h-1zM34 8h7v1h-7zM44 8h3v1h-3zM48 8h1v1h-1zM52 8h2v1h-2zM55 8h2v1h-2zM60 8h1v1h-1zM62 8h1v1h-1zM64 8h3v1h-3zM68 8h1v1h-1zM4 9h1v1h-1zM10 9h1v1h-1zM12 9h1v1h-1zM15 9h4v1h-4zM21 9h1v1h-1zM25 9h5v1h-5zM32 9h3v1h-3zM38 9h1v1h-1zM40 9h1v1h-1zM42 9h1v1h-1zM46 9h1v1h-1zM48 9h2v1h-2zM51 9h2v1h-2zM55 9h1v1h-1zM57 9h2v1h-2zM62 9h1v1h-1zM68 9h1v1h-1zM4 10h7v1h-7zM12 10h1v1h-1zM14 10h1v1h-1zM16 10h1v1h-1zM18 10h1v1h-1zM20 10h1v1h-1zM22 10h1v1h-1zM24 10h1v1h-1zM26 10h1v1h-1zM28 10h1v1h-1zM30 10h1v1h-1zM32 10h1v1h-1zM34 10h1v1h-1zM36 10h1v1h-1zM38 10h1v1h-1zM40 10h1v1h-1zM42 10h1v1h-1zM44 10h1v1h-1zM46 10h1v1h-1zM48 10h1v1h-1zM50 10h1v1h-1zM52 10h1v1h-1zM54 10h1v1h-1zM56 10h1v1h-1zM58 10h1v1h-1zM60 10h1v1h-1zM62 10h7v1h-7zM12 11h1v1h-1zM14 11h1v1h-1zM16 11h1v1h-1zM19 11h3v1h-3zM23 11h1v1h-1zM26 11h4v1h-4zM32 11h1v1h-1zM34 11h1v1h-1zM38 11h1v1h-1zM43 11h2v1h-2zM46 11h5v1h-5zM54 11h1v1h-1zM56 11h2v1h-2zM60 11h1v1h-1zM4 12h1v1h-1zM6 12h5v1h-5zM13 12h3v1h-3zM18 12h4v1h-4zM25 12h1v1h-1zM29 12h1v1h-1zM34 12h7v1h-7zM42 12h1v1h-1zM46 12h2v1h-2zM49 12h4v1h-4zM54 12h2v1h-2zM60 12h1v1h-1zM62 12h5v1h-5zM4 13h1v1h-1zM6 13h2v1h-2zM9 13h1v1h-1zM11 13h2v1h-2zM18 13h3v1h-3zM30 13h1v1h-1zM33 13h1v1h-1zM35 13h1v1h-1zM41 13h1v1h-1zM45 13h4v1h-4zM53 13h1v1h-1zM55 13h1v1h-1zM58 13h2v1h-2zM63 13h2v1h-2zM66 13h2v1h-2zM4 14h1v1h-1zM7 14h1v1h-1zM10 14h1v1h-1zM13 14h1v1h-1zM18 14h1v1h-1zM24 14h1v1h-1zM27 14h2v1h-2zM30 14h1v1h-1zM32 14h1v1h-1zM34 14h1v1h-1zM37 14h1v1h-1zM39 14h2v1h-2zM42 14h1v1h-1zM44 14h1v1h-1zM46 14h6v1h-6zM57 14h1v1h-1zM61 14h5v1h-5zM5 15h1v1h-1zM7 15h1v1h-1zM12 15h6v1h-6zM19 15h5v1h-5zM26 15h3v1h-3zM30 15h3v1h-3zM34 15h1v1h-1zM36 15h1v1h-1zM40 15h3v1h-3zM44 15h2v1h-2zM47 15h2v1h-2zM51 15h1v1h-1zM53 15h3v1h-3zM57 15h3v1h-3zM65 15h1v1h-1zM67 15h1v1h-1zM7 16h1v1h-1zM10 16h1v1h-1zM12 16h5v1h-5zM18 16h5v1h-5zM26 16h1v1h-1zM28 16h2v1h-2zM31 16h1v1h-1zM35 16h1v1h-1zM40 16h2v1h-2zM43 16h1v1h-1zM45 16h1v1h-1zM49 16h1v1h-1zM52 16h2v1h-2zM57 16h2v1h-2zM62 16h3v1h-3zM66 16h2v1h-2zM4 17h2v1h-2zM8 17h2v1h-2zM11 17h1v1h-1zM14 17h1v1h-1zM16 17h3v1h-3zM20 17h4v1h-4zM29 17h1v1h-1zM31 17h1v1h-1zM33 17h2v1h-2zM36 17h1v1h-1zM39 17h3v1h-3zM45 17h4v1h-4zM55 17h1v1h-1zM57 17h2v1h-2zM65 17h3v1h-3zM4 18h3v1h-3zM10 18h1v1h-1zM12 18h1v1h-1zM20 18h1v1h-1zM22 18h1v1h-1zM25 18h1v1h-1zM27 18h2v1h-2zM34 18h1v1h-1zM37 18h3v1h-3zM42 18h2v1h-2zM45 18h1v1h-1zM47 18h1v1h-1zM49 18h1v1h-1zM51 18h2v1h-2zM56 18h2v1h-2zM59 18h1v1h-1zM61 18h1v1h-1zM63 18h1v1h-1zM65 18h2v1h-2zM4 19h4v1h-4zM11 19h3v1h-3zM15 19h1v1h-1zM17 19h1v1h-1zM22 19h1v1h-1zM25 19h1v1h-1zM28 19h1v1h-1zM32 19h5v1h-5zM41 19h1v1h-1zM43 19h3v1h-3zM48 19h1v1h-1zM50 19h1v1h-1zM52 19h9v1h-9zM64 19h2v1h-2zM4 20h1v1h-1zM7 20h1v1h-1zM9 20h3v1h-3zM14 20h3v1h-3zM18 20h1v1h-1zM20 20h3v1h-3zM24 20h1v1h-1zM27 20h3v1h-3zM31 20h2v1h-2zM35 20h1v1h-1zM38 20h4v1h-4zM47 20h1v1h-1zM49 20h1v1h-1zM51 20h2v1h-2zM55 20h1v1h-1zM57 20h1v1h-1zM59 20h1v1h-1zM63 20h4v1h-4zM4 21h1v1h-1zM9 21h1v1h-1zM12 21h1v1h-1zM15 21h1v1h-1zM18 21h2v1h-2zM25 21h2v1h-2zM28 21h1v1h-1zM31 21h1v1h-1zM34 21h1v1h-1zM41 21h1v1h-1zM43 21h5v1h-5zM49 21h1v1h-1zM55 21h5v1h-5zM61 21h1v1h-1zM63 21h3v1h-3zM67 21h2v1h-2zM7 22h2v1h-2zM10 22h1v1h-1zM15 22h2v1h-2zM19 22h1v1h-1zM22 22h4v1h-4zM27 22h1v1h-1zM30 22h1v1h-1zM33 22h3v1h-3zM37 22h7v1h-7zM45 22h1v1h-1zM47 22h1v1h-1zM49 22h2v1h-2zM54 22h2v1h-2zM59 22h1v1h-1zM62 22h1v1h-1zM65 22h2v1h-2zM5 23h1v1h-1zM8 23h1v1h-1zM12 23h1v1h-1zM14 23h1v1h-1zM16 23h1v1h-1zM18 23h2v1h-2zM21 23h1v1h-1zM24 23h1v1h-1zM26 23h3v1h-3zM30 23h2v1h-2zM33 23h2v1h-2zM38 23h1v1h-1zM41 23h1v1h-1zM43 23h1v1h-1zM49 23h1v1h-1zM51 23h5v1h-5zM57 23h1v1h-1zM59 23h1v1h-1zM63 23h3v1h-3zM68 23h1v1h-1zM4 24h1v1h-1zM6 24h2v1h-2zM10 24h3v1h-3zM14 24h2v1h-2zM19 24h2v1h-2zM23 24h2v1h-2zM27 24h3v1h-3zM32 24h1v1h-1zM34 24h2v1h-2zM38 24h3v1h-3zM42 24h1v1h-1zM46 24h2v1h-2zM50 24h3v1h-3zM55 24h1v1h-1zM57 24h4v1h-4zM63 24h2v1h-2zM4 25h1v1h-1zM7 25h2v1h-2zM11 25h1v1h-1zM13 25h1v1h-1zM15 25h2v1h-2zM18 25h3v1h-3zM23 25h1v1h-1zM25 25h3v1h-3zM29 25h1v1h-1zM31 25h1v1h-1zM33 25h3v1h-3zM39 25h2v1h-2zM43 25h1v1h-1zM46 25h1v1h-1zM48 25h2v1h-2zM51 25h2v1h-2zM56 25h3v1h-3zM64 25h1v1h-1zM66 25h2v1h-2zM5 26h6v1h-6zM14 26h2v1h-2zM18 26h5v1h-5zM24 26h2v1h-2zM27 26h1v1h-1zM29 26h1v1h-1zM32 26h5v1h-5zM38 26h1v1h-1zM40 26h4v1h-4zM45 26h1v1h-1zM48 26h1v1h-1zM50 26h1v1h-1zM53 26h3v1h-3zM58 26h2v1h-2zM61 26h4v1h-4zM66 26h1v1h-1zM4 27h1v1h-1zM6 27h1v1h-1zM8 27h1v1h-1zM11 27h1v1h-1zM16 27h4v1h-4zM22 27h1v1h-1zM24 27h1v1h-1zM26 27h3v1h-3zM33 27h2v1h-2zM36 27h3v1h-3zM45 27h2v1h-2zM48 27h1v1h-1zM52 27h1v1h-1zM54 27h2v1h-2zM58 27h2v1h-2zM61 27h3v1h-3zM65 27h1v1h-1zM67 27h2v1h-2zM4 28h1v1h-1zM7 28h2v1h-2zM10 28h2v1h-2zM13 28h1v1h-1zM15 28h3v1h-3zM19 28h2v1h-2zM22 28h1v1h-1zM24 28h6v1h-6zM31 28h2v1h-2zM35 28h1v1h-1zM37 28h5v1h-5zM45 28h2v1h-2zM51 28h2v1h-2zM54 28h2v1h-2zM59 28h2v1h-2zM63 28h2v1h-2zM66 28h3v1h-3zM5 29h3v1h-3zM11 29h1v1h-1zM16 29h2v1h-2zM20 29h1v1h-1zM24 29h1v1h-1zM27 29h1v1h-1zM29 29h1v1h-1zM33 29h1v1h-1zM36 29h1v1h-1zM39 29h3v1h-3zM43 29h1v1h-1zM45 29h3v1h-3zM53 29h1v1h-1zM57 29h3v1h-3zM61 29h1v1h-1zM63 29h1v1h-1zM65 29h3v1h-3zM5 30h1v1h-1zM7 30h1v1h-1zM9 30h8v1h-8zM18 30h2v1h-2zM21 30h2v1h-2zM24 30h3v1h-3zM29 30h1v1h-1zM33 30h1v1h-1zM35 30h3v1h-3zM40 30h4v1h-4zM45 30h1v1h-1zM47 30h1v1h-1zM49 30h1v1h-1zM54 30h1v1h-1zM56 30h1v1h-1zM58 30h5v1h-5zM64 30h1v1h-1zM4 31h2v1h-2zM8 31h2v1h-2zM12 31h2v1h-2zM16 31h1v1h-1zM22 31h3v1h-3zM28 31h1v1h-1zM30 31h2v1h-2zM33 31h2v1h-2zM36 31h3v1h-3zM40 31h2v1h-2zM44 31h2v1h-2zM51 31h4v1h-4zM57 31h1v1h-1zM59 31h4v1h-4zM68 31h1v1h-1zM4 32h1v1h-1zM6 32h1v1h-1zM10 32h1v1h-1zM13 32h5v1h-5zM19 32h1v1h-1zM21 32h3v1h-3zM25 32h2v1h-2zM28 32h2v1h-2zM31 32h1v1h-1zM40 32h4v1h-4zM45 32h1v1h-1zM47 32h1v1h-1zM49 32h1v1h-1zM51 32h2v1h-2zM57 32h4v1h-4zM63 32h2v1h-2zM66 32h3v1h-3zM5 33h1v1h-1zM7 33h2v1h-2zM11 33h1v1h-1zM13 33h2v1h-2zM16 33h2v1h-2zM19 33h1v1h-1zM21 33h2v1h-2zM24 33h1v1h-1zM27 33h2v1h-2zM30 33h1v1h-1zM32 33h2v1h-2zM36 33h1v1h-1zM39 33h2v1h-2zM43 33h2v1h-2zM46 33h3v1h-3zM58 33h2v1h-2zM65 33h1v1h-1zM7 34h6v1h-6zM15 34h9v1h-9zM25 34h1v1h-1zM28 34h1v1h-1zM31 34h9v1h-9zM42 34h3v1h-3zM50 34h1v1h-1zM53 34h3v1h-3zM58 34h1v1h-1zM60 34h6v1h-6zM67 34h1v1h-1zM8 35h1v1h-1zM12 35h1v1h-1zM17 35h1v1h-1zM23 35h1v1h-1zM26 35h1v1h-1zM29 35h2v1h-2zM32 35h1v1h-1zM34 35h1v1h-1zM38 35h4v1h-4zM44 35h3v1h-3zM54 35h1v1h-1zM56 35h1v1h-1zM60 35h1v1h-1zM64 35h2v1h-2zM7 36h2v1h-2zM10 36h1v1h-1zM12 36h2v1h-2zM15 36h2v1h-2zM18 36h1v1h-1zM20 36h1v1h-1zM23 36h1v1h-1zM26 36h1v1h-1zM29 36h1v1h-1zM31 36h4v1h-4zM36 36h1v1h-1zM38 36h3v1h-3zM42 36h2v1h-2zM45 36h2v1h-2zM51 36h3v1h-3zM57 36h4v1h-4zM62 36h1v1h-1zM64 36h1v1h-1zM66 36h2v1h-2zM4 37h1v1h-1zM6 37h1v1h-1zM8 37h1v1h-1zM12 37h1v1h-1zM14 37h1v1h-1zM17 37h2v1h-2zM20 37h3v1h-3zM24 37h1v1h-1zM26 37h3v1h-3zM30 37h2v1h-2zM33 37h2v1h-2zM38 37h4v1h-4zM43 37h1v1h-1zM45 37h3v1h-3zM51 37h1v1h-1zM53 37h1v1h-1zM57 37h2v1h-2zM60 37h1v1h-1zM64 37h5v1h-5zM5 38h2v1h-2zM8 38h9v1h-9zM20 38h3v1h-3zM24 38h2v1h-2zM29 38h2v1h-2zM32 38h1v1h-1zM34 38h5v1h-5zM40 38h1v1h-1zM46 38h3v1h-3zM50 38h3v1h-3zM54 38h2v1h-2zM60 38h5v1h-5zM67 38h1v1h-1zM5 39h1v1h-1zM7 39h2v1h-2zM12 39h1v1h-1zM14 39h1v1h-1zM19 39h1v1h-1zM21 39h1v1h-1zM26 39h1v1h-1zM28 39h1v1h-1zM30 39h3v1h-3zM34 39h1v1h-1zM38 39h1v1h-1zM41 39h2v1h-2zM44 39h2v1h-2zM47 39h2v1h-2zM51 39h1v1h-1zM53 39h1v1h-1zM57 39h3v1h-3zM63 39h2v1h-2zM4 40h2v1h-2zM9 40h3v1h-3zM17 40h2v1h-2zM21 40h2v1h-2zM24 40h4v1h-4zM29 40h4v1h-4zM34 40h1v1h-1zM37 40h1v1h-1zM39 40h2v1h-2zM42 40h1v1h-1zM45 40h1v1h-1zM51 40h2v1h-2zM60 40h1v1h-1zM62 40h1v1h-1zM65 40h2v1h-2zM68 40h1v1h-1zM4 41h6v1h-6zM11 41h4v1h-4zM19 41h3v1h-3zM24 41h2v1h-2zM27 41h1v1h-1zM38 41h1v1h-1zM44 41h5v1h-5zM52 41h1v1h-1zM57 41h3v1h-3zM61 41h5v1h-5zM67 41h2v1h-2zM4 42h4v1h-4zM9 42h3v1h-3zM13 42h1v1h-1zM15 42h4v1h-4zM20 42h3v1h-3zM24 42h2v1h-2zM28 42h4v1h-4zM33 42h1v1h-1zM35 42h1v1h-1zM39 42h4v1h-4zM46 42h1v1h-1zM58 42h1v1h-1zM60 42h1v1h-1zM65 42h1v1h-1zM7 43h3v1h-3zM12 43h1v1h-1zM14 43h3v1h-3zM18 43h2v1h-2zM22 43h1v1h-1zM24 43h2v1h-2zM28 43h3v1h-3zM32 43h8v1h-8zM43 43h2v1h-2zM46 43h1v1h-1zM48 43h2v1h-2zM53 43h1v1h-1zM59 43h1v1h-1zM63 43h1v1h-1zM67 43h2v1h-2zM10 44h1v1h-1zM14 44h1v1h-1zM16 44h2v1h-2zM19 44h1v1h-1zM21 44h1v1h-1zM23 44h1v1h-1zM25 44h5v1h-5zM32 44h2v1h-2zM35 44h1v1h-1zM39 44h3v1h-3zM45 44h1v1h-1zM47 44h1v1h-1zM51 44h2v1h-2zM54 44h1v1h-1zM57 44h1v1h-1zM61 44h1v1h-1zM64 44h3v1h-3zM6 45h1v1h-1zM11 45h1v1h-1zM14 45h1v1h-1zM18 45h1v1h-1zM20 45h1v1h-1zM24 45h1v1h-1zM26 45h1v1h-1zM28 45h1v1h-1zM30 45h2v1h-2zM35 45h1v1h-1zM37 45h1v1h-1zM40 45h2v1h-2zM44 45h1v1h-1zM46 45h2v1h-2zM51 45h3v1h-3zM58 45h3v1h-3zM62 45h3v1h-3zM4 46h3v1h-3zM9 46h2v1h-2zM17 46h2v1h-2zM20 46h2v1h-2zM26 46h1v1h-1zM28 46h1v1h-1zM31 46h1v1h-1zM36 46h2v1h-2zM39 46h2v1h-2zM42 46h2v1h-2zM48 46h3v1h-3zM52 46h1v1h-1zM57 46h1v1h-1zM59 46h1v1h-1zM63 46h4v1h-4zM5 47h3v1h-3zM12 47h7v1h-7zM21 47h1v1h-1zM23 47h1v1h-1zM26 47h1v1h-1zM29 47h1v1h-1zM32 47h1v1h-1zM36 47h2v1h-2zM40 47h1v1h-1zM44 47h1v1h-1zM46 47h3v1h-3zM50 47h2v1h-2zM54 47h2v1h-2zM58 47h8v1h-8zM5 48h1v1h-1zM7 48h1v1h-1zM9 48h2v1h-2zM12 48h2v1h-2zM15 48h2v1h-2zM18 48h1v1h-1zM21 48h2v1h-2zM24 48h2v1h-2zM27 48h1v1h-1zM31 48h1v1h-1zM34 48h1v1h-1zM38 48h1v1h-1zM40 48h2v1h-2zM43 48h1v1h-1zM46 48h1v1h-1zM49 48h1v1h-1zM52 48h1v1h-1zM54 48h1v1h-1zM62 48h1v1h-1zM66 48h3v1h-3zM5 49h1v1h-1zM8 49h1v1h-1zM15 49h3v1h-3zM19 49h3v1h-3zM24 49h6v1h-6zM31 49h1v1h-1zM34 49h8v1h-8zM45 49h2v1h-2zM48 49h1v1h-1zM51 49h1v1h-1zM53 49h1v1h-1zM57 49h3v1h-3zM62 49h4v1h-4zM67 49h1v1h-1zM9 50h2v1h-2zM12 50h2v1h-2zM16 50h1v1h-1zM18 50h1v1h-1zM21 50h1v1h-1zM23 50h2v1h-2zM26 50h1v1h-1zM31 50h2v1h-2zM36 50h2v1h-2zM39 50h2v1h-2zM42 50h4v1h-4zM49 50h1v1h-1zM53 50h1v1h-1zM64 50h1v1h-1zM6 51h1v1h-1zM8 51h1v1h-1zM11 51h1v1h-1zM13 51h2v1h-2zM18 51h4v1h-4zM26 51h2v1h-2zM30 51h2v1h-2zM35 51h2v1h-2zM38 51h1v1h-1zM40 51h1v1h-1zM44 51h3v1h-3zM48 51h2v1h-2zM52 51h1v1h-1zM56 51h2v1h-2zM59 51h2v1h-2zM62 51h1v1h-1zM65 51h1v1h-1zM67 51h1v1h-1zM4 52h1v1h-1zM7 52h2v1h-2zM10 52h1v1h-1zM13 52h2v1h-2zM17 52h1v1h-1zM20 52h1v1h-1zM23 52h2v1h-2zM27 52h1v1h-1zM29 52h3v1h-3zM36 52h1v1h-1zM38 52h5v1h-5zM46 52h2v1h-2zM49 52h1v1h-1zM51 52h2v1h-2zM60 52h3v1h-3zM66 52h1v1h-1zM5 53h1v1h-1zM7 53h3v1h-3zM14 53h1v1h-1zM18 53h1v1h-1zM21 53h4v1h-4zM26 53h1v1h-1zM35 53h1v1h-1zM37 53h1v1h-1zM40 53h1v1h-1zM45 53h2v1h-2zM48 53h1v1h-1zM51 53h1v1h-1zM53 53h1v1h-1zM57 53h4v1h-4zM64 53h1v1h-1zM67 53h2v1h-2zM4 54h3v1h-3zM10 54h2v1h-2zM15 54h1v1h-1zM18 54h1v1h-1zM21 54h1v1h-1zM23 54h3v1h-3zM27 54h3v1h-3zM31 54h3v1h-3zM35 54h1v1h-1zM37 54h1v1h-1zM40 54h1v1h-1zM42 54h1v1h-1zM45 54h1v1h-1zM47 54h1v1h-1zM52 54h2v1h-2zM59 54h1v1h-1zM63 54h2v1h-2zM66 54h1v1h-1zM4 55h1v1h-1zM6 55h1v1h-1zM8 55h1v1h-1zM11 55h1v1h-1zM13 55h1v1h-1zM15 55h1v1h-1zM17 55h1v1h-1zM19 55h1v1h-1zM21 55h2v1h-2zM28 55h1v1h-1zM33 55h1v1h-1zM35 55h1v1h-1zM37 55h1v1h-1zM42 55h3v1h-3zM47 55h4v1h-4zM52 55h1v1h-1zM54 55h1v1h-1zM56 55h1v1h-1zM58 55h1v1h-1zM60 55h2v1h-2zM63 55h3v1h-3zM4 56h3v1h-3zM8 56h4v1h-4zM13 56h1v1h-1zM15 56h2v1h-2zM20 56h2v1h-2zM23 56h3v1h-3zM28 56h1v1h-1zM30 56h2v1h-2zM34 56h3v1h-3zM39 56h2v1h-2zM43 56h1v1h-1zM46 56h1v1h-1zM51 56h2v1h-2zM54 56h1v1h-1zM57 56h1v1h-1zM61 56h2v1h-2zM64 56h1v1h-1zM67 56h1v1h-1zM4 57h2v1h-2zM7 57h3v1h-3zM11 57h3v1h-3zM15 57h3v1h-3zM20 57h2v1h-2zM23 57h1v1h-1zM25 57h4v1h-4zM30 57h1v1h-1zM35 57h1v1h-1zM44 57h1v1h-1zM46 57h2v1h-2zM49 57h1v1h-1zM52 57h1v1h-1zM57 57h2v1h-2zM60 57h1v1h-1zM62 57h3v1h-3zM67 57h1v1h-1zM6 58h2v1h-2zM9 58h2v1h-2zM15 58h2v1h-2zM23 58h1v1h-1zM26 58h1v1h-1zM28 58h1v1h-1zM30 58h3v1h-3zM36 58h1v1h-1zM39 58h1v1h-1zM41 58h3v1h-3zM45 58h1v1h-1zM47 58h1v1h-1zM50 58h3v1h-3zM54 58h1v1h-1zM58 58h1v1h-1zM63 58h3v1h-3zM4 59h1v1h-1zM7 59h1v1h-1zM13 59h1v1h-1zM15 59h4v1h-4zM20 59h1v1h-1zM23 59h1v1h-1zM25 59h1v1h-1zM30 59h2v1h-2zM34 59h1v1h-1zM38 59h1v1h-1zM43 59h2v1h-2zM46 59h1v1h-1zM48 59h2v1h-2zM51 59h1v1h-1zM54 59h2v1h-2zM57 59h1v1h-1zM60 59h2v1h-2zM63 59h1v1h-1zM65 59h1v1h-1zM68 59h1v1h-1zM5 60h2v1h-2zM8 60h1v1h-1zM10 60h1v1h-1zM12 60h1v1h-1zM14 60h1v1h-1zM16 60h1v1h-1zM19 60h1v1h-1zM25 60h1v1h-1zM28 60h2v1h-2zM31 60h2v1h-2zM34 60h7v1h-7zM42 60h2v1h-2zM47 60h1v1h-1zM49 60h1v1h-1zM52 60h1v1h-1zM54 60h2v1h-2zM60 60h5v1h-5zM66 60h2v1h-2zM12 61h3v1h-3zM17 61h3v1h-3zM22 61h4v1h-4zM28 61h1v1h-1zM30 61h1v1h-1zM34 61h1v1h-1zM38 61h1v1h-1zM41 61h1v1h-1zM43 61h4v1h-4zM48 61h1v1h-1zM53 61h1v1h-1zM56 61h3v1h-3zM60 61h1v1h-1zM64 61h1v1h-1zM68 61h1v1h-1zM4 62h7v1h-7zM13 62h1v1h-1zM16 62h1v1h-1zM19 62h1v1h-1zM21 62h1v1h-1zM26 62h4v1h-4zM31 62h4v1h-4zM36 62h1v1h-1zM38 62h5v1h-5zM44 62h2v1h-2zM47 62h2v1h-2zM50 62h2v1h-2zM54 62h3v1h-3zM58 62h1v1h-1zM60 62h1v1h-1zM62 62h1v1h-1zM64 62h1v1h-1zM67 62h1v1h-1zM4 63h1v1h-1zM10 63h1v1h-1zM12 63h1v1h-1zM17 63h1v1h-1zM19 63h3v1h-3zM23 63h4v1h-4zM28 63h1v1h-1zM30 63h1v1h-1zM34 63h1v1h-1zM38 63h1v1h-1zM40 63h3v1h-3zM44 63h2v1h-2zM47 63h1v1h-1zM49 63h1v1h-1zM52 63h1v1h-1zM54 63h2v1h-2zM60 63h1v1h-1zM64 63h2v1h-2zM67 63h1v1h-1zM4 64h1v1h-1zM6 64h3v1h-3zM10 64h1v1h-1zM12 64h5v1h-5zM18 64h1v1h-1zM21 64h1v1h-1zM23 64h4v1h-4zM28 64h3v1h-3zM33 64h6v1h-6zM40 64h1v1h-1zM42 64h2v1h-2zM45 64h1v1h-1zM47 64h1v1h-1zM49 64h1v1h-1zM52 64h1v1h-1zM54 64h1v1h-1zM60 64h6v1h-6zM68 64h1v1h-1zM4 65h1v1h-1zM6 65h3v1h-3zM10 65h1v1h-1zM12 65h1v1h-1zM15 65h1v1h-1zM20 65h3v1h-3zM24 65h2v1h-2zM27 65h1v1h-1zM29 65h1v1h-1zM31 65h1v1h-1zM40 65h2v1h-2zM43 65h4v1h-4zM48 65h1v1h-1zM51 65h3v1h-3zM56 65h3v1h-3zM62 65h6v1h-6zM4 66h1v1h-1zM6 66h3v1h-3zM10 66h1v1h-1zM12 66h1v1h-1zM14 66h1v1h-1zM18 66h1v1h-1zM29 66h2v1h-2zM33 66h1v1h-1zM35 66h1v1h-1zM40 66h1v1h-1zM42 66h1v1h-1zM44 66h2v1h-2zM50 66h2v1h-2zM54 66h2v1h-2zM57 66h3v1h-3zM61 66h4v1h-4zM66 66h2v1h-2zM4 67h1v1h-1zM10 67h1v1h-1zM14 67h4v1h-4zM20 67h2v1h-2zM23 67h1v1h-1zM26 67h1v1h-1zM29 67h3v1h-3zM33 67h1v1h-1zM35 67h1v1h-1zM40 67h1v1h-1zM43 67h1v1h-1zM45 67h1v1h-1zM49 67h1v1h-1zM51 67h1v1h-1zM53 67h5v1h-5zM63 67h1v1h-1zM65 67h1v1h-1zM67 67h1v1h-1zM4 68h7v1h-7zM12 68h1v1h-1zM14 68h2v1h-2zM17 68h1v1h-1zM23 68h1v1h-1zM26 68h10v1h-10zM37 68h6v1h-6zM49 68h6v1h-6zM62 68h1v1h-1zM66 68h1v1h-1z" fill="#14140F"/></svg></div>
+<div class="panel" id="p-air" data-key="air"><svg class="qr" viewBox="0 0 41 41" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges" role="img" aria-label="QR code"><path d="M4 4h7v1h-7zM13 4h1v1h-1zM15 4h1v1h-1zM17 4h1v1h-1zM22 4h4v1h-4zM27 4h1v1h-1zM30 4h7v1h-7zM4 5h1v1h-1zM10 5h1v1h-1zM12 5h1v1h-1zM15 5h2v1h-2zM18 5h1v1h-1zM21 5h1v1h-1zM27 5h1v1h-1zM30 5h1v1h-1zM36 5h1v1h-1zM4 6h1v1h-1zM6 6h3v1h-3zM10 6h1v1h-1zM12 6h3v1h-3zM16 6h3v1h-3zM22 6h1v1h-1zM24 6h1v1h-1zM27 6h2v1h-2zM30 6h1v1h-1zM32 6h3v1h-3zM36 6h1v1h-1zM4 7h1v1h-1zM6 7h3v1h-3zM10 7h1v1h-1zM13 7h1v1h-1zM16 7h1v1h-1zM20 7h1v1h-1zM22 7h2v1h-2zM26 7h3v1h-3zM30 7h1v1h-1zM32 7h3v1h-3zM36 7h1v1h-1zM4 8h1v1h-1zM6 8h3v1h-3zM10 8h1v1h-1zM13 8h1v1h-1zM15 8h1v1h-1zM18 8h1v1h-1zM22 8h1v1h-1zM26 8h1v1h-1zM28 8h1v1h-1zM30 8h1v1h-1zM32 8h3v1h-3zM36 8h1v1h-1zM4 9h1v1h-1zM10 9h1v1h-1zM13 9h3v1h-3zM20 9h1v1h-1zM22 9h1v1h-1zM25 9h2v1h-2zM28 9h1v1h-1zM30 9h1v1h-1zM36 9h1v1h-1zM4 10h7v1h-7zM12 10h1v1h-1zM14 10h1v1h-1zM16 10h1v1h-1zM18 10h1v1h-1zM20 10h1v1h-1zM22 10h1v1h-1zM24 10h1v1h-1zM26 10h1v1h-1zM28 10h1v1h-1zM30 10h7v1h-7zM13 11h2v1h-2zM16 11h3v1h-3zM21 11h3v1h-3zM27 11h2v1h-2zM5 12h3v1h-3zM9 12h2v1h-2zM14 12h1v1h-1zM16 12h4v1h-4zM21 12h2v1h-2zM25 12h2v1h-2zM34 12h2v1h-2zM4 13h3v1h-3zM8 13h1v1h-1zM11 13h2v1h-2zM15 13h5v1h-5zM21 13h3v1h-3zM25 13h1v1h-1zM27 13h1v1h-1zM30 13h2v1h-2zM33 13h2v1h-2zM36 13h1v1h-1zM5 14h1v1h-1zM7 14h1v1h-1zM9 14h2v1h-2zM13 14h5v1h-5zM19 14h2v1h-2zM22 14h1v1h-1zM24 14h2v1h-2zM27 14h1v1h-1zM30 14h4v1h-4zM35 14h2v1h-2zM4 15h6v1h-6zM12 15h2v1h-2zM15 15h3v1h-3zM19 15h1v1h-1zM21 15h1v1h-1zM23 15h1v1h-1zM26 15h2v1h-2zM30 15h2v1h-2zM33 15h1v1h-1zM36 15h1v1h-1zM6 16h1v1h-1zM8 16h3v1h-3zM14 16h1v1h-1zM17 16h1v1h-1zM20 16h1v1h-1zM23 16h2v1h-2zM26 16h1v1h-1zM29 16h1v1h-1zM32 16h2v1h-2zM4 17h2v1h-2zM8 17h1v1h-1zM11 17h4v1h-4zM16 17h2v1h-2zM24 17h3v1h-3zM28 17h1v1h-1zM31 17h1v1h-1zM33 17h3v1h-3zM4 18h1v1h-1zM8 18h1v1h-1zM10 18h1v1h-1zM12 18h3v1h-3zM17 18h3v1h-3zM21 18h1v1h-1zM23 18h3v1h-3zM30 18h1v1h-1zM32 18h1v1h-1zM6 19h2v1h-2zM11 19h4v1h-4zM17 19h1v1h-1zM19 19h1v1h-1zM21 19h1v1h-1zM25 19h1v1h-1zM29 19h2v1h-2zM33 19h2v1h-2zM5 20h1v1h-1zM8 20h3v1h-3zM15 20h1v1h-1zM18 20h2v1h-2zM22 20h1v1h-1zM24 20h4v1h-4zM29 20h2v1h-2zM32 20h1v1h-1zM34 20h1v1h-1zM11 21h2v1h-2zM14 21h3v1h-3zM18 21h2v1h-2zM24 21h7v1h-7zM32 21h2v1h-2zM36 21h1v1h-1zM4 22h2v1h-2zM7 22h1v1h-1zM9 22h3v1h-3zM13 22h1v1h-1zM15 22h1v1h-1zM17 22h1v1h-1zM22 22h1v1h-1zM24 22h2v1h-2zM28 22h1v1h-1zM31 22h2v1h-2zM34 22h2v1h-2zM5 23h2v1h-2zM9 23h1v1h-1zM11 23h1v1h-1zM13 23h2v1h-2zM16 23h1v1h-1zM19 23h1v1h-1zM21 23h1v1h-1zM23 23h1v1h-1zM26 23h1v1h-1zM29 23h2v1h-2zM32 23h1v1h-1zM5 24h2v1h-2zM8 24h3v1h-3zM12 24h1v1h-1zM16 24h3v1h-3zM20 24h2v1h-2zM26 24h1v1h-1zM28 24h1v1h-1zM33 24h3v1h-3zM4 25h1v1h-1zM8 25h1v1h-1zM12 25h1v1h-1zM14 25h2v1h-2zM18 25h1v1h-1zM20 25h2v1h-2zM24 25h2v1h-2zM27 25h1v1h-1zM30 25h1v1h-1zM33 25h2v1h-2zM36 25h1v1h-1zM8 26h1v1h-1zM10 26h1v1h-1zM13 26h1v1h-1zM16 26h2v1h-2zM20 26h1v1h-1zM22 26h4v1h-4zM27 26h2v1h-2zM30 26h1v1h-1zM32 26h1v1h-1zM34 26h3v1h-3zM5 27h2v1h-2zM11 27h2v1h-2zM16 27h3v1h-3zM21 27h2v1h-2zM24 27h1v1h-1zM27 27h1v1h-1zM31 27h1v1h-1zM33 27h1v1h-1zM36 27h1v1h-1zM4 28h1v1h-1zM6 28h8v1h-8zM15 28h1v1h-1zM20 28h1v1h-1zM23 28h1v1h-1zM26 28h1v1h-1zM28 28h5v1h-5zM35 28h1v1h-1zM12 29h6v1h-6zM19 29h1v1h-1zM23 29h3v1h-3zM28 29h1v1h-1zM32 29h2v1h-2zM35 29h1v1h-1zM4 30h7v1h-7zM13 30h1v1h-1zM15 30h2v1h-2zM19 30h2v1h-2zM22 30h4v1h-4zM27 30h2v1h-2zM30 30h1v1h-1zM32 30h1v1h-1zM4 31h1v1h-1zM10 31h1v1h-1zM12 31h3v1h-3zM16 31h3v1h-3zM20 31h1v1h-1zM24 31h1v1h-1zM27 31h2v1h-2zM32 31h4v1h-4zM4 32h1v1h-1zM6 32h3v1h-3zM10 32h1v1h-1zM13 32h1v1h-1zM17 32h3v1h-3zM23 32h1v1h-1zM26 32h7v1h-7zM34 32h1v1h-1zM36 32h1v1h-1zM4 33h1v1h-1zM6 33h3v1h-3zM10 33h1v1h-1zM12 33h3v1h-3zM18 33h6v1h-6zM25 33h3v1h-3zM31 33h1v1h-1zM34 33h3v1h-3zM4 34h1v1h-1zM6 34h3v1h-3zM10 34h1v1h-1zM12 34h1v1h-1zM15 34h4v1h-4zM20 34h3v1h-3zM24 34h1v1h-1zM26 34h1v1h-1zM30 34h2v1h-2zM33 34h2v1h-2zM4 35h1v1h-1zM10 35h1v1h-1zM12 35h2v1h-2zM16 35h2v1h-2zM21 35h1v1h-1zM24 35h1v1h-1zM26 35h4v1h-4zM31 35h2v1h-2zM36 35h1v1h-1zM4 36h7v1h-7zM17 36h7v1h-7zM25 36h1v1h-1zM27 36h1v1h-1zM29 36h2v1h-2zM32 36h1v1h-1zM34 36h1v1h-1z" fill="#14140F"/></svg></div>
+<div class="panel" id="p-mwfb" data-key="mwfb"><svg class="qr" viewBox="0 0 41 41" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges" role="img" aria-label="QR code"><path d="M4 4h7v1h-7zM14 4h1v1h-1zM16 4h5v1h-5zM22 4h3v1h-3zM27 4h1v1h-1zM30 4h7v1h-7zM4 5h1v1h-1zM10 5h1v1h-1zM12 5h3v1h-3zM16 5h1v1h-1zM18 5h1v1h-1zM20 5h2v1h-2zM24 5h4v1h-4zM30 5h1v1h-1zM36 5h1v1h-1zM4 6h1v1h-1zM6 6h3v1h-3zM10 6h1v1h-1zM12 6h3v1h-3zM16 6h1v1h-1zM18 6h3v1h-3zM22 6h1v1h-1zM24 6h1v1h-1zM26 6h3v1h-3zM30 6h1v1h-1zM32 6h3v1h-3zM36 6h1v1h-1zM4 7h1v1h-1zM6 7h3v1h-3zM10 7h1v1h-1zM13 7h2v1h-2zM17 7h1v1h-1zM19 7h1v1h-1zM22 7h2v1h-2zM26 7h1v1h-1zM28 7h1v1h-1zM30 7h1v1h-1zM32 7h3v1h-3zM36 7h1v1h-1zM4 8h1v1h-1zM6 8h3v1h-3zM10 8h1v1h-1zM17 8h1v1h-1zM19 8h1v1h-1zM21 8h2v1h-2zM28 8h1v1h-1zM30 8h1v1h-1zM32 8h3v1h-3zM36 8h1v1h-1zM4 9h1v1h-1zM10 9h1v1h-1zM17 9h2v1h-2zM21 9h1v1h-1zM26 9h1v1h-1zM28 9h1v1h-1zM30 9h1v1h-1zM36 9h1v1h-1zM4 10h7v1h-7zM12 10h1v1h-1zM14 10h1v1h-1zM16 10h1v1h-1zM18 10h1v1h-1zM20 10h1v1h-1zM22 10h1v1h-1zM24 10h1v1h-1zM26 10h1v1h-1zM28 10h1v1h-1zM30 10h7v1h-7zM13 11h3v1h-3zM17 11h1v1h-1zM19 11h1v1h-1zM21 11h3v1h-3zM26 11h2v1h-2zM5 12h3v1h-3zM9 12h2v1h-2zM17 12h1v1h-1zM20 12h3v1h-3zM25 12h1v1h-1zM34 12h2v1h-2zM4 13h1v1h-1zM6 13h4v1h-4zM11 13h3v1h-3zM15 13h1v1h-1zM17 13h1v1h-1zM19 13h5v1h-5zM25 13h1v1h-1zM27 13h1v1h-1zM30 13h2v1h-2zM33 13h2v1h-2zM36 13h1v1h-1zM4 14h1v1h-1zM8 14h3v1h-3zM12 14h1v1h-1zM17 14h4v1h-4zM22 14h1v1h-1zM25 14h1v1h-1zM27 14h1v1h-1zM29 14h5v1h-5zM35 14h2v1h-2zM4 15h1v1h-1zM7 15h3v1h-3zM11 15h1v1h-1zM15 15h2v1h-2zM18 15h1v1h-1zM21 15h1v1h-1zM27 15h2v1h-2zM30 15h2v1h-2zM33 15h1v1h-1zM36 15h1v1h-1zM5 16h1v1h-1zM7 16h2v1h-2zM10 16h1v1h-1zM20 16h1v1h-1zM23 16h1v1h-1zM26 16h4v1h-4zM32 16h2v1h-2zM35 16h2v1h-2zM5 17h1v1h-1zM12 17h1v1h-1zM14 17h1v1h-1zM16 17h1v1h-1zM20 17h1v1h-1zM24 17h1v1h-1zM26 17h1v1h-1zM28 17h1v1h-1zM31 17h1v1h-1zM34 17h2v1h-2zM6 18h1v1h-1zM9 18h3v1h-3zM13 18h1v1h-1zM16 18h1v1h-1zM18 18h3v1h-3zM22 18h5v1h-5zM28 18h1v1h-1zM30 18h1v1h-1zM32 18h2v1h-2zM4 19h1v1h-1zM6 19h2v1h-2zM9 19h1v1h-1zM13 19h2v1h-2zM16 19h3v1h-3zM21 19h2v1h-2zM25 19h10v1h-10zM6 20h3v1h-3zM10 20h4v1h-4zM15 20h4v1h-4zM20 20h8v1h-8zM29 20h2v1h-2zM32 20h3v1h-3zM7 21h2v1h-2zM12 21h2v1h-2zM15 21h2v1h-2zM18 21h2v1h-2zM24 21h1v1h-1zM26 21h2v1h-2zM30 21h1v1h-1zM32 21h2v1h-2zM35 21h2v1h-2zM5 22h4v1h-4zM10 22h1v1h-1zM12 22h3v1h-3zM16 22h2v1h-2zM19 22h3v1h-3zM24 22h3v1h-3zM30 22h3v1h-3zM34 22h1v1h-1zM8 23h2v1h-2zM11 23h2v1h-2zM17 23h2v1h-2zM20 23h4v1h-4zM28 23h3v1h-3zM32 23h1v1h-1zM35 23h2v1h-2zM6 24h1v1h-1zM9 24h3v1h-3zM14 24h1v1h-1zM17 24h1v1h-1zM20 24h2v1h-2zM24 24h2v1h-2zM28 24h1v1h-1zM33 24h2v1h-2zM36 24h1v1h-1zM4 25h5v1h-5zM13 25h1v1h-1zM15 25h1v1h-1zM17 25h1v1h-1zM19 25h2v1h-2zM23 25h5v1h-5zM30 25h1v1h-1zM34 25h1v1h-1zM36 25h1v1h-1zM6 26h2v1h-2zM9 26h2v1h-2zM13 26h1v1h-1zM15 26h4v1h-4zM21 26h2v1h-2zM24 26h1v1h-1zM26 26h2v1h-2zM29 26h4v1h-4zM35 26h2v1h-2zM5 27h1v1h-1zM7 27h1v1h-1zM9 27h1v1h-1zM11 27h1v1h-1zM13 27h1v1h-1zM16 27h1v1h-1zM18 27h4v1h-4zM28 27h1v1h-1zM30 27h1v1h-1zM32 27h2v1h-2zM36 27h1v1h-1zM4 28h1v1h-1zM8 28h6v1h-6zM16 28h3v1h-3zM22 28h1v1h-1zM26 28h1v1h-1zM28 28h6v1h-6zM36 28h1v1h-1zM12 29h5v1h-5zM23 29h1v1h-1zM28 29h1v1h-1zM32 29h2v1h-2zM4 30h7v1h-7zM16 30h1v1h-1zM21 30h1v1h-1zM23 30h2v1h-2zM27 30h2v1h-2zM30 30h1v1h-1zM32 30h1v1h-1zM4 31h1v1h-1zM10 31h1v1h-1zM12 31h1v1h-1zM14 31h1v1h-1zM18 31h1v1h-1zM22 31h7v1h-7zM32 31h5v1h-5zM4 32h1v1h-1zM6 32h3v1h-3zM10 32h1v1h-1zM14 32h1v1h-1zM16 32h2v1h-2zM19 32h1v1h-1zM21 32h1v1h-1zM23 32h1v1h-1zM25 32h8v1h-8zM34 32h2v1h-2zM4 33h1v1h-1zM6 33h3v1h-3zM10 33h1v1h-1zM12 33h1v1h-1zM14 33h1v1h-1zM19 33h1v1h-1zM21 33h1v1h-1zM24 33h1v1h-1zM26 33h3v1h-3zM31 33h1v1h-1zM35 33h2v1h-2zM4 34h1v1h-1zM6 34h3v1h-3zM10 34h1v1h-1zM12 34h8v1h-8zM21 34h2v1h-2zM24 34h1v1h-1zM27 34h5v1h-5zM4 35h1v1h-1zM10 35h1v1h-1zM12 35h6v1h-6zM22 35h1v1h-1zM24 35h1v1h-1zM27 35h3v1h-3zM31 35h2v1h-2zM36 35h1v1h-1zM4 36h7v1h-7zM16 36h1v1h-1zM18 36h1v1h-1zM20 36h1v1h-1zM23 36h1v1h-1zM25 36h1v1h-1zM27 36h1v1h-1zM29 36h2v1h-2zM32 36h3v1h-3z" fill="#14140F"/></svg></div>
+<div class="panel" id="p-toofb" data-key="toofb"><svg class="qr" viewBox="0 0 41 41" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges" role="img" aria-label="QR code"><path d="M4 4h7v1h-7zM16 4h3v1h-3zM20 4h3v1h-3zM26 4h1v1h-1zM30 4h7v1h-7zM4 5h1v1h-1zM10 5h1v1h-1zM12 5h6v1h-6zM22 5h5v1h-5zM28 5h1v1h-1zM30 5h1v1h-1zM36 5h1v1h-1zM4 6h1v1h-1zM6 6h3v1h-3zM10 6h1v1h-1zM13 6h1v1h-1zM15 6h3v1h-3zM24 6h2v1h-2zM27 6h1v1h-1zM30 6h1v1h-1zM32 6h3v1h-3zM36 6h1v1h-1zM4 7h1v1h-1zM6 7h3v1h-3zM10 7h1v1h-1zM12 7h3v1h-3zM16 7h1v1h-1zM18 7h1v1h-1zM20 7h1v1h-1zM22 7h4v1h-4zM28 7h1v1h-1zM30 7h1v1h-1zM32 7h3v1h-3zM36 7h1v1h-1zM4 8h1v1h-1zM6 8h3v1h-3zM10 8h1v1h-1zM12 8h1v1h-1zM14 8h1v1h-1zM16 8h2v1h-2zM20 8h2v1h-2zM25 8h2v1h-2zM30 8h1v1h-1zM32 8h3v1h-3zM36 8h1v1h-1zM4 9h1v1h-1zM10 9h1v1h-1zM13 9h6v1h-6zM22 9h2v1h-2zM26 9h2v1h-2zM30 9h1v1h-1zM36 9h1v1h-1zM4 10h7v1h-7zM12 10h1v1h-1zM14 10h1v1h-1zM16 10h1v1h-1zM18 10h1v1h-1zM20 10h1v1h-1zM22 10h1v1h-1zM24 10h1v1h-1zM26 10h1v1h-1zM28 10h1v1h-1zM30 10h7v1h-7zM12 11h1v1h-1zM14 11h2v1h-2zM19 11h1v1h-1zM26 11h1v1h-1zM28 11h1v1h-1zM5 12h1v1h-1zM7 12h4v1h-4zM12 12h3v1h-3zM16 12h6v1h-6zM27 12h4v1h-4zM32 12h2v1h-2zM35 12h1v1h-1zM8 13h2v1h-2zM11 13h4v1h-4zM19 13h6v1h-6zM26 13h2v1h-2zM32 13h4v1h-4zM4 14h1v1h-1zM6 14h2v1h-2zM9 14h3v1h-3zM14 14h1v1h-1zM16 14h1v1h-1zM18 14h2v1h-2zM26 14h5v1h-5zM32 14h5v1h-5zM4 15h1v1h-1zM7 15h2v1h-2zM11 15h1v1h-1zM13 15h2v1h-2zM17 15h3v1h-3zM22 15h2v1h-2zM31 15h1v1h-1zM34 15h3v1h-3zM4 16h1v1h-1zM6 16h6v1h-6zM16 16h1v1h-1zM19 16h3v1h-3zM30 16h2v1h-2zM4 17h3v1h-3zM8 17h2v1h-2zM11 17h2v1h-2zM14 17h1v1h-1zM16 17h2v1h-2zM19 17h1v1h-1zM21 17h4v1h-4zM27 17h1v1h-1zM29 17h1v1h-1zM31 17h1v1h-1zM33 17h2v1h-2zM5 18h2v1h-2zM8 18h4v1h-4zM14 18h1v1h-1zM18 18h4v1h-4zM23 18h2v1h-2zM26 18h1v1h-1zM28 18h1v1h-1zM30 18h2v1h-2zM34 18h1v1h-1zM4 19h2v1h-2zM7 19h1v1h-1zM12 19h5v1h-5zM18 19h1v1h-1zM22 19h1v1h-1zM24 19h1v1h-1zM27 19h3v1h-3zM32 19h3v1h-3zM36 19h1v1h-1zM7 20h2v1h-2zM10 20h4v1h-4zM16 20h1v1h-1zM18 20h1v1h-1zM20 20h1v1h-1zM24 20h1v1h-1zM26 20h8v1h-8zM5 21h1v1h-1zM7 21h1v1h-1zM9 21h1v1h-1zM12 21h3v1h-3zM16 21h1v1h-1zM18 21h1v1h-1zM22 21h5v1h-5zM28 21h3v1h-3zM32 21h1v1h-1zM34 21h1v1h-1zM36 21h1v1h-1zM5 22h6v1h-6zM12 22h1v1h-1zM14 22h1v1h-1zM16 22h2v1h-2zM22 22h2v1h-2zM27 22h1v1h-1zM29 22h1v1h-1zM31 22h1v1h-1zM33 22h4v1h-4zM4 23h3v1h-3zM9 23h1v1h-1zM11 23h2v1h-2zM14 23h1v1h-1zM17 23h1v1h-1zM19 23h1v1h-1zM22 23h1v1h-1zM27 23h1v1h-1zM30 23h1v1h-1zM32 23h3v1h-3zM36 23h1v1h-1zM4 24h5v1h-5zM10 24h2v1h-2zM15 24h3v1h-3zM20 24h2v1h-2zM33 24h1v1h-1zM36 24h1v1h-1zM4 25h5v1h-5zM12 25h3v1h-3zM17 25h3v1h-3zM26 25h2v1h-2zM31 25h2v1h-2zM4 26h1v1h-1zM6 26h3v1h-3zM10 26h2v1h-2zM14 26h1v1h-1zM16 26h1v1h-1zM20 26h1v1h-1zM22 26h6v1h-6zM29 26h2v1h-2zM32 26h5v1h-5zM4 27h1v1h-1zM6 27h2v1h-2zM11 27h1v1h-1zM13 27h1v1h-1zM15 27h4v1h-4zM21 27h4v1h-4zM27 27h5v1h-5zM34 27h2v1h-2zM4 28h2v1h-2zM10 28h1v1h-1zM13 28h1v1h-1zM15 28h1v1h-1zM18 28h3v1h-3zM24 28h1v1h-1zM27 28h7v1h-7zM35 28h1v1h-1zM12 29h4v1h-4zM18 29h4v1h-4zM27 29h2v1h-2zM32 29h1v1h-1zM34 29h2v1h-2zM4 30h7v1h-7zM13 30h1v1h-1zM16 30h1v1h-1zM18 30h1v1h-1zM22 30h4v1h-4zM27 30h2v1h-2zM30 30h1v1h-1zM32 30h1v1h-1zM34 30h1v1h-1zM4 31h1v1h-1zM10 31h1v1h-1zM12 31h1v1h-1zM15 31h3v1h-3zM21 31h3v1h-3zM27 31h2v1h-2zM32 31h4v1h-4zM4 32h1v1h-1zM6 32h3v1h-3zM10 32h1v1h-1zM12 32h1v1h-1zM14 32h1v1h-1zM16 32h1v1h-1zM19 32h1v1h-1zM21 32h4v1h-4zM26 32h7v1h-7zM35 32h1v1h-1zM4 33h1v1h-1zM6 33h3v1h-3zM10 33h1v1h-1zM12 33h3v1h-3zM16 33h2v1h-2zM19 33h1v1h-1zM22 33h1v1h-1zM29 33h1v1h-1zM31 33h1v1h-1zM34 33h1v1h-1zM36 33h1v1h-1zM4 34h1v1h-1zM6 34h3v1h-3zM10 34h1v1h-1zM14 34h3v1h-3zM18 34h1v1h-1zM20 34h2v1h-2zM23 34h2v1h-2zM26 34h1v1h-1zM28 34h1v1h-1zM31 34h2v1h-2zM34 34h3v1h-3zM4 35h1v1h-1zM10 35h1v1h-1zM12 35h1v1h-1zM15 35h1v1h-1zM17 35h1v1h-1zM20 35h3v1h-3zM24 35h1v1h-1zM31 35h6v1h-6zM4 36h7v1h-7zM14 36h1v1h-1zM18 36h1v1h-1zM20 36h1v1h-1zM23 36h1v1h-1zM27 36h6v1h-6z" fill="#14140F"/></svg></div>
+<div class="panel" id="p-janefb" data-key="janefb"><svg class="qr" viewBox="0 0 41 41" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges" role="img" aria-label="QR code"><path d="M4 4h7v1h-7zM13 4h1v1h-1zM15 4h3v1h-3zM19 4h4v1h-4zM25 4h1v1h-1zM27 4h1v1h-1zM30 4h7v1h-7zM4 5h1v1h-1zM10 5h1v1h-1zM13 5h2v1h-2zM17 5h1v1h-1zM21 5h1v1h-1zM23 5h2v1h-2zM28 5h1v1h-1zM30 5h1v1h-1zM36 5h1v1h-1zM4 6h1v1h-1zM6 6h3v1h-3zM10 6h1v1h-1zM12 6h1v1h-1zM14 6h2v1h-2zM17 6h1v1h-1zM19 6h1v1h-1zM23 6h3v1h-3zM28 6h1v1h-1zM30 6h1v1h-1zM32 6h3v1h-3zM36 6h1v1h-1zM4 7h1v1h-1zM6 7h3v1h-3zM10 7h1v1h-1zM13 7h5v1h-5zM21 7h4v1h-4zM27 7h1v1h-1zM30 7h1v1h-1zM32 7h3v1h-3zM36 7h1v1h-1zM4 8h1v1h-1zM6 8h3v1h-3zM10 8h1v1h-1zM12 8h2v1h-2zM15 8h1v1h-1zM17 8h1v1h-1zM19 8h1v1h-1zM22 8h3v1h-3zM27 8h1v1h-1zM30 8h1v1h-1zM32 8h3v1h-3zM36 8h1v1h-1zM4 9h1v1h-1zM10 9h1v1h-1zM12 9h1v1h-1zM14 9h2v1h-2zM19 9h5v1h-5zM30 9h1v1h-1zM36 9h1v1h-1zM4 10h7v1h-7zM12 10h1v1h-1zM14 10h1v1h-1zM16 10h1v1h-1zM18 10h1v1h-1zM20 10h1v1h-1zM22 10h1v1h-1zM24 10h1v1h-1zM26 10h1v1h-1zM28 10h1v1h-1zM30 10h7v1h-7zM13 11h2v1h-2zM16 11h1v1h-1zM19 11h1v1h-1zM21 11h2v1h-2zM25 11h1v1h-1zM28 11h1v1h-1zM5 12h1v1h-1zM8 12h1v1h-1zM10 12h1v1h-1zM12 12h4v1h-4zM17 12h5v1h-5zM23 12h4v1h-4zM28 12h2v1h-2zM31 12h2v1h-2zM34 12h1v1h-1zM4 13h2v1h-2zM7 13h3v1h-3zM11 13h1v1h-1zM13 13h1v1h-1zM17 13h1v1h-1zM20 13h1v1h-1zM22 13h1v1h-1zM24 13h2v1h-2zM27 13h1v1h-1zM29 13h1v1h-1zM33 13h3v1h-3zM7 14h1v1h-1zM9 14h2v1h-2zM18 14h1v1h-1zM21 14h1v1h-1zM24 14h1v1h-1zM27 14h1v1h-1zM29 14h2v1h-2zM33 14h1v1h-1zM35 14h1v1h-1zM4 15h1v1h-1zM8 15h1v1h-1zM11 15h1v1h-1zM13 15h1v1h-1zM20 15h4v1h-4zM25 15h2v1h-2zM28 15h2v1h-2zM35 15h2v1h-2zM4 16h3v1h-3zM10 16h3v1h-3zM15 16h1v1h-1zM17 16h1v1h-1zM20 16h1v1h-1zM22 16h1v1h-1zM24 16h4v1h-4zM30 16h1v1h-1zM32 16h2v1h-2zM4 17h1v1h-1zM6 17h4v1h-4zM12 17h2v1h-2zM16 17h2v1h-2zM21 17h1v1h-1zM23 17h1v1h-1zM27 17h1v1h-1zM29 17h1v1h-1zM31 17h1v1h-1zM8 18h3v1h-3zM13 18h2v1h-2zM17 18h4v1h-4zM22 18h2v1h-2zM26 18h2v1h-2zM29 18h3v1h-3zM35 18h1v1h-1zM4 19h1v1h-1zM7 19h2v1h-2zM11 19h2v1h-2zM14 19h4v1h-4zM20 19h6v1h-6zM27 19h1v1h-1zM29 19h2v1h-2zM33 19h1v1h-1zM5 20h2v1h-2zM8 20h1v1h-1zM10 20h2v1h-2zM13 20h1v1h-1zM15 20h3v1h-3zM19 20h1v1h-1zM21 20h2v1h-2zM24 20h5v1h-5zM30 20h1v1h-1zM32 20h1v1h-1zM35 20h1v1h-1zM4 21h2v1h-2zM7 21h1v1h-1zM11 21h6v1h-6zM18 21h1v1h-1zM27 21h2v1h-2zM33 21h3v1h-3zM4 22h1v1h-1zM6 22h1v1h-1zM10 22h1v1h-1zM12 22h1v1h-1zM15 22h3v1h-3zM20 22h1v1h-1zM22 22h1v1h-1zM24 22h2v1h-2zM27 22h2v1h-2zM31 22h1v1h-1zM33 22h1v1h-1zM7 23h3v1h-3zM14 23h1v1h-1zM18 23h2v1h-2zM22 23h5v1h-5zM28 23h2v1h-2zM31 23h1v1h-1zM35 23h1v1h-1zM4 24h1v1h-1zM6 24h1v1h-1zM8 24h1v1h-1zM10 24h3v1h-3zM14 24h1v1h-1zM17 24h3v1h-3zM21 24h2v1h-2zM25 24h2v1h-2zM28 24h1v1h-1zM30 24h1v1h-1zM32 24h2v1h-2zM4 25h1v1h-1zM6 25h2v1h-2zM11 25h7v1h-7zM20 25h5v1h-5zM26 25h2v1h-2zM33 25h1v1h-1zM35 25h1v1h-1zM7 26h4v1h-4zM13 26h2v1h-2zM16 26h4v1h-4zM21 26h1v1h-1zM24 26h2v1h-2zM27 26h3v1h-3zM32 26h4v1h-4zM7 27h1v1h-1zM9 27h1v1h-1zM15 27h1v1h-1zM19 27h2v1h-2zM22 27h1v1h-1zM25 27h1v1h-1zM29 27h2v1h-2zM4 28h7v1h-7zM12 28h5v1h-5zM20 28h2v1h-2zM23 28h4v1h-4zM28 28h5v1h-5zM35 28h1v1h-1zM12 29h1v1h-1zM14 29h1v1h-1zM16 29h1v1h-1zM18 29h1v1h-1zM21 29h2v1h-2zM27 29h2v1h-2zM32 29h1v1h-1zM34 29h2v1h-2zM4 30h7v1h-7zM13 30h4v1h-4zM20 30h2v1h-2zM24 30h1v1h-1zM26 30h1v1h-1zM28 30h1v1h-1zM30 30h1v1h-1zM32 30h2v1h-2zM35 30h1v1h-1zM4 31h1v1h-1zM10 31h1v1h-1zM14 31h2v1h-2zM18 31h1v1h-1zM20 31h2v1h-2zM23 31h4v1h-4zM28 31h1v1h-1zM32 31h1v1h-1zM35 31h2v1h-2zM4 32h1v1h-1zM6 32h3v1h-3zM10 32h1v1h-1zM12 32h3v1h-3zM17 32h1v1h-1zM20 32h3v1h-3zM24 32h1v1h-1zM28 32h6v1h-6zM4 33h1v1h-1zM6 33h3v1h-3zM10 33h1v1h-1zM13 33h4v1h-4zM19 33h1v1h-1zM21 33h1v1h-1zM23 33h1v1h-1zM27 33h1v1h-1zM30 33h3v1h-3zM34 33h2v1h-2zM4 34h1v1h-1zM6 34h3v1h-3zM10 34h1v1h-1zM13 34h1v1h-1zM15 34h2v1h-2zM22 34h2v1h-2zM26 34h1v1h-1zM29 34h4v1h-4zM4 35h1v1h-1zM10 35h1v1h-1zM12 35h1v1h-1zM18 35h9v1h-9zM28 35h1v1h-1zM4 36h7v1h-7zM14 36h1v1h-1zM18 36h2v1h-2zM21 36h1v1h-1zM24 36h6v1h-6zM36 36h1v1h-1z" fill="#14140F"/></svg></div>
+    </div>
+  </div>
+
+  <p class="now">
+    <span class="now-t" id="nowT">Save my contact</span>
+    <span class="now-s" id="nowS">Adds Jane to your phone contacts</span>
+  </p>
+
+  <div class="rows">
+<button class="row lead on" data-target="vcard" aria-pressed="true"><span class="row-t">Save my contact</span><span class="row-s">Adds Jane to your phone contacts</span></button>
+<button class="row" data-target="air" aria-pressed="false"><span class="row-t">Marshwind Sanctuary</span><span class="row-s">Book the farm stay on Airbnb</span></button>
+<button class="row" data-target="mwfb" aria-pressed="false"><span class="row-t">Marshwind Sanctuary</span><span class="row-s">Facebook page</span></button>
+<button class="row" data-target="toofb" aria-pressed="false"><span class="row-t">The Ordinary Owner</span><span class="row-s">Facebook page</span></button>
+<button class="row" data-target="janefb" aria-pressed="false"><span class="row-t">Jane Rafael</span><span class="row-s">Personal Facebook</span></button>
+  </div>
+
+  <div class="reach">
+    <a href="mailto:jane@yoursmartvirtualoffice.com"><span>Email</span>jane@yoursmartvirtualoffice.com</a>
+    <a href="tel:+639278891685"><span>Mobile</span>+63 927 889 1685</a>
+  </div>
+</main>
+
+<script>
+  var LABELS = {"vcard": {"t": "Save my contact", "s": "Adds Jane to your phone contacts"}, "air": {"t": "Marshwind Sanctuary", "s": "Book the farm stay on Airbnb"}, "mwfb": {"t": "Marshwind Sanctuary", "s": "Facebook page"}, "toofb": {"t": "The Ordinary Owner", "s": "Facebook page"}, "janefb": {"t": "Jane Rafael", "s": "Personal Facebook"}};
+  var rows = document.querySelectorAll('.row');
+  var panels = document.querySelectorAll('.panel');
+  var nowT = document.getElementById('nowT');
+  var nowS = document.getElementById('nowS');
+
+  rows.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var key = btn.dataset.target;
+      rows.forEach(function (b) {
+        var on = b === btn;
+        b.classList.toggle('on', on);
+        b.setAttribute('aria-pressed', on ? 'true' : 'false');
+      });
+      panels.forEach(function (p) {
+        p.classList.toggle('on', p.dataset.key === key);
+      });
+      nowT.textContent = LABELS[key].t;
+      nowS.textContent = LABELS[key].s;
+    });
+  });
+</script>
+</body>
+</html>
